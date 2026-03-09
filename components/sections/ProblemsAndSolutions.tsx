@@ -1,0 +1,111 @@
+import { colorfulCards } from "@/constants";
+import { cn } from "@/lib/utils";
+import { getTranslations } from "next-intl/server";
+import { Card, CardContent, CardTitle } from "../ui/card";
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  LibraryIcon,
+  StudyDeskIcon,
+  ChatQuestion01Icon,
+  WorryIcon,
+  Tick02Icon,
+} from "@hugeicons/core-free-icons";
+
+const iconsMap = [LibraryIcon, StudyDeskIcon, ChatQuestion01Icon, WorryIcon];
+
+const ProblemsAndSolutions = async () => {
+  const t = await getTranslations("ProblemsAndSolutions");
+  const problems = t.raw("Problems.items");
+  const Solutions = t.raw("Solutions.items");
+
+  return (
+    <section>
+      <div className="container space-y-6 py-16">
+        <div className="space-y-3">
+          <h2 className="mx-auto text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
+            {t("Problems.Title")}
+          </h2>
+          <p className="text-muted-foreground text-lg leading-8">
+            {t("Problems.subTitle")}
+          </p>
+
+          <p className="text-lg leading-8">{t("Problems.beforeProblems")}</p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {problems.map((problem: string, index: number) => (
+            <Card
+              key={index}
+              className={cn(
+                "group transition-all duration-200 hover:-translate-1",
+                colorfulCards[index].cardBg,
+              )}
+            >
+              <CardContent>
+                <CardTitle
+                  className={cn(
+                    "flex items-center gap-3 font-bold",
+                    colorfulCards[index].titleColor,
+                  )}
+                >
+                  <HugeiconsIcon
+                    icon={iconsMap[index]}
+                    size={46}
+                    className={cn(
+                      "transition-all duration-400 group-hover:rotate-[1turn]",
+                      colorfulCards[index].iconColor,
+                    )}
+                  />
+                  {problem}
+                </CardTitle>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <hr />
+
+        <div className="space-y-3">
+          <h2 className="mx-auto text-2xl leading-9 font-bold text-emerald-700 md:text-3xl lg:text-4xl">
+            {t("Solutions.Title")}
+          </h2>
+          <p className="text-lg leading-8 text-emerald-800/80">
+            {t("Solutions.subTitle")}
+          </p>
+
+          <p className="text-lg leading-8">{t("Solutions.beforeSolutions")}</p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {Solutions.map((solution: string, index: number) => (
+            <Card
+              key={index}
+              className={cn(
+                "group transition-all duration-200 hover:-translate-1",
+                colorfulCards[index + 4].cardBg,
+              )}
+            >
+              <CardContent>
+                <CardTitle
+                  className={cn(
+                    "flex items-center gap-3 font-bold",
+                    colorfulCards[index + 4].titleColor,
+                  )}
+                >
+                  <HugeiconsIcon
+                    icon={Tick02Icon}
+                    size={46}
+                    className={colorfulCards[index + 4].iconColor}
+                  />
+                  {solution}
+                </CardTitle>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProblemsAndSolutions;

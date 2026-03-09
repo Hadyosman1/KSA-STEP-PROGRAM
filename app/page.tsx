@@ -1,5 +1,6 @@
-import { ComponentExample } from "@/components/component-example";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-return <ComponentExample />;
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect("/ar");
 }
