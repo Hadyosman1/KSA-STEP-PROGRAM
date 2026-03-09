@@ -1,31 +1,15 @@
+"use client";
+
 import Header from "@/components/header/Header";
 import Curriculum from "@/components/sections/Curriculum";
 import Hero from "@/components/sections/Hero";
 import Journey from "@/components/sections/Journey";
 import ProblemsAndSolutions from "@/components/sections/ProblemsAndSolutions";
 import Statistics from "@/components/sections/Statistics";
-import { Locale } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-interface PageProps {
-  params: Promise<{ locale: Locale }>;
-}
-
-export async function generateMetadata({ params }: PageProps) {
-  const { locale } = await params;
-  const t = await getTranslations({
-    locale,
-    namespace: "Metadata",
-  });
-
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
-}
-
-export default async function HomePage() {
-  const t = await getTranslations();
+export default function HomePage() {
+  const t = useTranslations();
 
   return (
     <div className="">

@@ -27,6 +27,12 @@ const Hero = ({
   ctaText,
   secondaryCtaText,
 }: Props) => {
+  const handleNavigateSecondaryCTA = () => {
+    const targetSection = document.getElementById("curriculum") as HTMLElement;
+
+    targetSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="relative grid min-h-[80vh] py-24">
       <Image
@@ -63,7 +69,9 @@ const Hero = ({
               {ctaText}
               <HugeiconsIcon icon={Calendar02Icon} className="size-6" />
             </Button>
+
             <Button
+              onClick={handleNavigateSecondaryCTA}
               variant="secondary"
               size={"lg"}
               className={

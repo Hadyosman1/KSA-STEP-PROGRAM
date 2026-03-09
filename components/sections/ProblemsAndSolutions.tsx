@@ -1,20 +1,22 @@
+"use client";
+
 import { colorfulCards } from "@/constants";
 import { cn } from "@/lib/utils";
-import { getTranslations } from "next-intl/server";
-import { Card, CardContent, CardTitle } from "../ui/card";
-import { HugeiconsIcon } from "@hugeicons/react";
 import {
+  ChatQuestion01Icon,
   LibraryIcon,
   StudyDeskIcon,
-  ChatQuestion01Icon,
-  WorryIcon,
   Tick02Icon,
+  WorryIcon,
 } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { useTranslations } from "next-intl";
+import { Card, CardContent, CardTitle } from "../ui/card";
 
 const iconsMap = [LibraryIcon, StudyDeskIcon, ChatQuestion01Icon, WorryIcon];
 
-const ProblemsAndSolutions = async () => {
-  const t = await getTranslations("ProblemsAndSolutions");
+const ProblemsAndSolutions = () => {
+  const t = useTranslations("ProblemsAndSolutions");
   const problems = t.raw("Problems.items");
   const Solutions = t.raw("Solutions.items");
 

@@ -1,10 +1,12 @@
+"use client"
+
 import { colorfulCards } from "@/constants";
 import { cn } from "@/lib/utils";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import { Card, CardContent, CardTitle } from "../ui/card";
 
-const Journey = async () => {
-  const t = await getTranslations("Journey");
+const Journey = () => {
+  const t = useTranslations("Journey");
   const steps = t.raw("steps");
 
   return (

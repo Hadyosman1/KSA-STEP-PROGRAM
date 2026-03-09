@@ -1,103 +1,103 @@
 {
   "Metadata": {
-    "title": "First Page",
-    "description": "This is the first page"
+    "title": "Aptitude Test Preparation Program",
+    "description": "An intensive preparatory program designed to help you master both quantitative and verbal aptitude questions, with hands-on training and realistic mock exams similar to the official test."
   },
   "Hero": {
-    "badge": "🟢 التسجيل مفتوح الآن — المقاعد محدودة",
-    "title": "ارفع درجتك في اختبار القدرات خلال 30 يوماً",
-    "description": "برنامج تحضيري مكثف يساعدك على فهم أسئلة القدرات الكمي واللفظي، مع تدريب عملي واختبارات محاكاة تشبه اختبار قياس الحقيقي.",
+    "badge": "🟢 Registration Open Now — Limited Seats",
+    "title": "Boost Your Aptitude Test Score in 30 Days",
+    "description": "An intensive program to help you understand quantitative and verbal aptitude questions, with practical training and mock exams that closely resemble the official test.",
     "features": [
-      "تدريب مباشر مع مدربين متخصصين",
-      "خطة دراسية واضحة خطوة بخطوة",
-      "اختبارات محاكاة واقعية",
-      "متابعة من مستشار تعليمي"
+      "Live training sessions with expert instructors",
+      "Step-by-step study plan",
+      "Realistic mock exams",
+      "Personalized guidance from an educational advisor"
     ],
     "buttons": {
-      "CTA": "احجز مقعدك الآن",
-      "secondary": "اطلع على محتوى البرنامج"
+      "CTA": "Reserve Your Spot Now",
+      "secondary": "View Program Details"
     }
   },
   "Statistics": {
-    "title": "أرقام تعكس نتائج طلابنا",
+    "title": "Results That Speak for Our Students",
     "items": [
       {
         "value": "96%",
-        "label": "تحسن في مستوى الطلاب بعد البرنامج"
+        "label": "Students' improvement after the program"
       },
       {
-        "value": "30يوم",
-        "label": "برنامج تحضيري مكثف"
+        "value": "30 Days",
+        "label": "Intensive preparatory program"
       },
       {
         "value": "100%",
-        "label": "تدريب أونلاين تفاعلي"
+        "label": "Interactive online training"
       }
     ]
   },
   "ProblemsAndSolutions": {
     "Problems": {
-      "Title": "هل تواجه هذه المشكلة مع اختبار القدرات؟",
-      "subTitle": "كثير من الطلاب يذاكرون لساعات طويلة… لكن النتيجة لا تعكس الجهد المبذول.",
-      "beforeProblems": "غالباً السبب يكون:",
+      "Title": "Struggling with the Aptitude Test?",
+      "subTitle": "Many students study for hours, yet their results don’t reflect their effort.",
+      "beforeProblems": "Common reasons include:",
       "items": [
-        "الاعتماد على مصادر متفرقة ومحتوى غير منظم",
-        "عدم وجود خطة مذاكرة واضحة",
-        "حل الأسئلة بدون فهم طريقة التفكير فيها",
-        "التوتر يوم الاختبار"
+        "Relying on scattered and unstructured materials",
+        "Lack of a clear study plan",
+        "Solving questions without understanding the thought process",
+        "Feeling stressed on test day"
       ]
     },
     "Solutions": {
-      "Title": "الحل: برنامج تحضير مبني على النتائج",
-      "subTitle": "صممنا هذا البرنامج ليكون منظومة تدريب متكاملة تساعدك على تطوير مهاراتك في اختبار القدرات.",
-      "beforeSolutions": "ستحصل على:",
+      "Title": "The Solution: Results-Oriented Preparation",
+      "subTitle": "Our program is a complete training system designed to help you develop all the skills needed for the aptitude test.",
+      "beforeSolutions": "You will get:",
       "items": [
-        "خطة مذاكرة واضحة لمدة 30 يوماً",
-        "جلسات تدريب مباشرة مع مدربين متخصصين",
-        "استراتيجيات تساعدك على حل الأسئلة بسرعة",
-        "اختبارات محاكاة بنفس نظام اختبار قياس"
+        "A clear 30-day study plan",
+        "Live training sessions with expert instructors",
+        "Strategies to solve questions quickly and effectively",
+        "Mock exams that simulate the official test format"
       ]
     }
   },
   "Curriculum": {
-    "title": "ماذا ستتعلم في البرنامج؟",
-    "description": "البرنامج يغطي جميع مهارات اختبار القدرات بطريقة عملية ومنظمة.",
+    "title": "What You’ll Learn in the Program",
+    "description": "The program covers all aptitude test skills in a practical and organized way.",
     "items": [
       {
-        "title": "الجبر والهندسة",
-        "description": "فهم المعادلات والأشكال الهندسية بأساليب مبسطة تساعدك على حل الأسئلة بسرعة."
+        "title": "Algebra & Geometry",
+        "description": "Understand equations and geometric shapes with simplified methods to solve questions efficiently."
       },
       {
-        "title": "الإحصاء وتحليل البيانات",
-        "description": "التعامل مع الجداول والرسوم البيانية والاحتمالات كما تأتي في الاختبار."
+        "title": "Statistics & Data Analysis",
+        "description": "Work with tables, charts, and probabilities as they appear on the test."
       },
       {
-        "title": "استيعاب المقروء",
-        "description": "تعلم تقنيات قراءة النصوص بسرعة واستخراج الإجابة الصحيحة."
+        "title": "Reading Comprehension",
+        "description": "Learn techniques to read passages quickly and extract the correct answers."
       },
       {
-        "title": "إكمال الجمل والسياق",
-        "description": "استراتيجيات تساعدك على فهم معنى الجملة حتى لو لم تعرف بعض الكلمات."
+        "title": "Sentence Completion & Context",
+        "description": "Strategies to understand the meaning of sentences even if you don’t know all the words."
       },
       {
-        "title": "إدارة الوقت في الاختبار",
-        "description": "كيف توزع وقتك بشكل صحيح وتتجنب الأخطاء الشائعة."
+        "title": "Time Management",
+        "description": "Learn to allocate your time wisely and avoid common mistakes during the test."
       },
       {
-        "title": "اختبارات محاكاة",
-        "description": "اختبارات تدريبية تحاكي اختبار قياس الحقيقي."
+        "title": "Mock Exams",
+        "description": "Practice exams that mirror the official aptitude test experience."
       }
     ]
   },
   "Journey": {
-    "title": "مستشار تعليمي يتابعك طوال البرنامج",
-    "description": "من لحظة تسجيلك يتم تعيين مستشار تعليمي خاص بك يساعدك على تنظيم خطة المذاكرة ومتابعة تقدمك.",
-    "beforeSteps": "رحلتك في البرنامج تمر بأربع مراحل:",
+    "title": "Your Personal Educational Advisor",
+    "description": "From the moment you enroll, a dedicated advisor will help you organize your study plan and track your progress.",
+    "beforeSteps": "Your program journey consists of four stages:",
     "steps": [
-      "تقييم مستواك في البداية",
-      "إعداد خطة دراسية مناسبة لوقتك",
-      "متابعة أسبوعية لتطوير مستواك",
-      "دعم مستمر حتى موعد الاختبار"
+      "Initial assessment of your current level",
+      "Designing a study plan tailored to your schedule",
+      "Weekly progress monitoring and adjustments",
+      "Continuous support until the test day"
     ]
   }
 }

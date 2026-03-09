@@ -1,8 +1,10 @@
-import { getTranslations } from "next-intl/server";
-import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
+"use client";
 
-const Statistics = async () => {
-  const t = await getTranslations("Statistics");
+import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
+import { useTranslations } from "next-intl";
+
+const Statistics = () => {
+  const t = useTranslations("Statistics");
   const items = t.raw("items") as Array<{ value: string; label: string }>;
 
   return (

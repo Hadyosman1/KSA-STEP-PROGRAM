@@ -1,7 +1,7 @@
-import { NextIntlClientProvider } from "next-intl";
+import { DirectionProvider } from "@base-ui/react";
+import { Messages, NextIntlClientProvider } from "next-intl";
 import { Cairo } from "next/font/google";
 import { notFound } from "next/navigation";
-import { DirectionProvider } from "@base-ui/react";
 
 // CSS
 import "./globals.css";
@@ -9,7 +9,6 @@ import "./globals.css";
 // i18n
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -17,6 +16,21 @@ const cairo = Cairo({
   display: "swap",
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const messages = (await import(`@/messages/${locale}.json`))
+    .default as Messages;
+
+  return {
+    title: messages.Metadata.title,
+    description: messages.Metadata.description,
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -35,8 +49,7 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  // Enable static rendering
-  setRequestLocale(locale);
+  const messages = (await import(`@/messages/${locale}.json`)).default;
 
   return (
     <html
@@ -45,7 +58,7 @@ export default async function LocaleLayout({
       className="scroll-smooth"
     >
       <body className={`${cairo.className} antialiased`}>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <DirectionProvider direction={locale === "ar" ? "rtl" : "ltr"}>
             {children}
           </DirectionProvider>

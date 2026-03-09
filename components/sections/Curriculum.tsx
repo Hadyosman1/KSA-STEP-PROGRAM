@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import {
   BookOpenTextIcon,
@@ -8,7 +10,7 @@ import {
   TimeManagementIcon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import {
   Card,
   CardContent,
@@ -26,8 +28,8 @@ const itemsIconsMap = [
   NoteDoneIcon,
 ];
 
-const Curriculum = async () => {
-  const t = await getTranslations("Curriculum");
+const Curriculum = () => {
+  const t = useTranslations("Curriculum");
   const items = t.raw("items") as { title: string; description: string }[];
 
   return (
