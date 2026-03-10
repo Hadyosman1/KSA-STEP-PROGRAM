@@ -5,6 +5,7 @@ import {
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
+import { FadeUp } from "../motion-wrappers";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 
@@ -48,58 +49,67 @@ const Hero = ({
       <div className="container grid items-center">
         <div>
           <div className="text-background mx-auto max-w-4xl text-center text-balance">
-            <Badge className="bg-primary/20 outline-primary mx-auto mb-4 flex h-auto px-4 py-1 text-sm leading-9 outline-2 md:text-base">
-              {badge}
-            </Badge>
-            <h1 className="mb-6 text-3xl leading-12 font-bold md:text-4xl lg:text-5xl">
-              {title}
-            </h1>
-            <p className="text-lg leading-9 font-semibold md:text-xl">
-              {subtitle}
-            </p>
+            <FadeUp delay={0.2}>
+              <Badge className="bg-primary/20 outline-primary mx-auto mb-4 flex h-auto px-4 py-1 text-sm leading-9 outline-2 md:text-base">
+                {badge}
+              </Badge>
+            </FadeUp>
+            <FadeUp delay={0.5}>
+              <h1 className="mb-6 text-3xl leading-12 font-bold md:text-4xl lg:text-5xl">
+                {title}
+              </h1>
+            </FadeUp>
+            <FadeUp delay={0.8}>
+              <p className="text-lg leading-9 font-semibold md:text-xl">
+                {subtitle}
+              </p>
+            </FadeUp>
           </div>
+          <FadeUp delay={1.2}>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-2">
+              <Button
+                size={"lg"}
+                className={
+                  "h-12 max-w-64 grow rounded-full text-lg font-semibold"
+                }
+              >
+                {ctaText}
+                <HugeiconsIcon icon={Calendar02Icon} className="size-6" />
+              </Button>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-2">
-            <Button
-              size={"lg"}
-              className={
-                "h-12 max-w-64 grow rounded-full text-lg font-semibold"
-              }
-            >
-              {ctaText}
-              <HugeiconsIcon icon={Calendar02Icon} className="size-6" />
-            </Button>
+              <Button
+                onClick={handleNavigateSecondaryCTA}
+                variant="secondary"
+                size={"lg"}
+                className={
+                  "h-12 max-w-64 grow rounded-full text-lg font-semibold"
+                }
+              >
+                {secondaryCtaText}
+                <HugeiconsIcon icon={LibraryIcon} className="size-6" />
+              </Button>
+            </div>
+          </FadeUp>
 
-            <Button
-              onClick={handleNavigateSecondaryCTA}
-              variant="secondary"
-              size={"lg"}
-              className={
-                "h-12 max-w-64 grow rounded-full text-lg font-semibold"
-              }
-            >
-              {secondaryCtaText}
-              <HugeiconsIcon icon={LibraryIcon} className="size-6" />
-            </Button>
-          </div>
-
-          <div className="mx-auto mt-8 w-fit">
-            <ul className="mx-auto flex flex-wrap items-center justify-center gap-2">
-              {features.map((feature, index) => (
-                <li
-                  key={index}
-                  className="text-background flex items-center gap-0.25 text-xs md:text-sm lg:text-base"
-                >
-                  <HugeiconsIcon
-                    icon={Tick02Icon}
-                    size="24"
-                    className="text-green-400"
-                  />
-                  {feature}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <FadeUp delay={1.5}>
+            <div className="mx-auto mt-8 w-fit">
+              <ul className="mx-auto flex flex-wrap items-center justify-center gap-2">
+                {features.map((feature, index) => (
+                  <li
+                    key={index}
+                    className="text-background flex items-center gap-0.25 text-xs md:text-sm lg:text-base"
+                  >
+                    <HugeiconsIcon
+                      icon={Tick02Icon}
+                      size="24"
+                      className="text-green-400"
+                    />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </FadeUp>
         </div>
       </div>
     </section>

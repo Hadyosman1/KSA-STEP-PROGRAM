@@ -22,15 +22,24 @@
     "title": "Results That Speak for Our Students",
     "items": [
       {
-        "value": "96%",
+        "value": {
+          "num": 96,
+          "suffix": "%"
+        },
         "label": "Students' improvement after the program"
       },
       {
-        "value": "30 Days",
+        "value": {
+          "num": 30,
+          "suffix": " Days"
+        },
         "label": "Intensive preparatory program"
       },
       {
-        "value": "100%",
+        "value": {
+          "num": 100,
+          "suffix": "%"
+        },
         "label": "Interactive online training"
       }
     ]
