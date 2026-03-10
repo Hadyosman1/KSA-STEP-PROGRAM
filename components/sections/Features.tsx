@@ -35,7 +35,7 @@ const Features = () => {
       <div className="container py-16">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 lg:gap-8">
           <div className="space-y-10 lg:col-span-2">
-            <BlurIn delay={0.2}>
+            <BlurIn delay={0.1}>
               <h2 className="text-primary mx-auto text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
                 {t("title")}
               </h2>
@@ -43,7 +43,7 @@ const Features = () => {
 
             <StaggerList
               staggerDelay={0.2}
-              initialDelay={0.2}
+              initialDelay={0.1}
               className="grid grid-cols-1 gap-4 md:grid-cols-2"
             >
               {features.map((feature, idx) => (
@@ -79,7 +79,7 @@ const Features = () => {
           </div>
 
           <BlurIn
-            delay={0.2}
+            delay={0.1}
             className="group relative overflow-hidden rounded-2xl max-lg:hidden"
           >
             <Image

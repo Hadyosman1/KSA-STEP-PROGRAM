@@ -1,3 +1,4 @@
+import { navigateToLeadForm } from "@/lib/utils";
 import {
   Calendar02Icon,
   LibraryIcon,
@@ -49,25 +50,26 @@ const Hero = ({
       <div className="container grid items-center">
         <div>
           <div className="text-background mx-auto max-w-4xl text-center text-balance">
-            <FadeUp delay={0.2}>
+            <FadeUp delay={0.1}>
               <Badge className="bg-primary/20 outline-primary mx-auto mb-4 flex h-auto px-4 py-1 text-sm leading-9 outline-2 md:text-base">
                 {badge}
               </Badge>
             </FadeUp>
-            <FadeUp delay={0.5}>
+            <FadeUp delay={0.3}>
               <h1 className="mb-6 text-3xl leading-12 font-bold md:text-4xl lg:text-5xl">
                 {title}
               </h1>
             </FadeUp>
-            <FadeUp delay={0.8}>
+            <FadeUp delay={0.6}>
               <p className="text-lg leading-9 font-semibold md:text-xl">
                 {subtitle}
               </p>
             </FadeUp>
           </div>
-          <FadeUp delay={1.2}>
+          <FadeUp delay={0.9}>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-2">
               <Button
+                onClick={navigateToLeadForm}
                 size={"lg"}
                 className={
                   "h-12 max-w-64 grow rounded-full text-lg font-semibold"
@@ -91,7 +93,7 @@ const Hero = ({
             </div>
           </FadeUp>
 
-          <FadeUp delay={1.5}>
+          <FadeUp delay={1.2}>
             <div className="mx-auto mt-8 w-fit">
               <ul className="mx-auto flex flex-wrap items-center justify-center gap-2">
                 {features.map((feature, index) => (

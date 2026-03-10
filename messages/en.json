@@ -159,6 +159,19 @@
       }
     ]
   },
+  "LeadForm": {
+    "title": "Register Now and Start Improving Your Score",
+    "subtitle": "Fill in your details and our team will contact you within 24 hours to build your study plan.",
+    "form": {
+      "footer": "🔒 Your information is secure and will not be shared with any third party.",
+      "fields": {
+        "fullName": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "submit": "Reserve Your Spot Now"
+      }
+    }
+  },
   "Footer": {
     "description": "Elm Way is a Saudi virtual academy dedicated to helping students and professionals achieve their career goals through specialized training programs and high-quality educational content. The academy provides flexible and accessible learning solutions designed to prepare learners for professional exams and equip them with the knowledge, skills, and confidence needed for career success using modern e-learning technologies.",
     "copyright": "All rights reserved to Elm Way company"

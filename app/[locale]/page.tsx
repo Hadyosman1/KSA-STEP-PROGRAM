@@ -7,6 +7,7 @@ import FAQs from "@/components/sections/FAQs";
 import Features from "@/components/sections/Features";
 import Hero from "@/components/sections/Hero";
 import Journey from "@/components/sections/Journey";
+import LeadForm from "@/components/sections/LeadForm";
 import ProblemsAndSolutions from "@/components/sections/ProblemsAndSolutions";
 import Statistics from "@/components/sections/Statistics";
 import { useTranslations } from "next-intl";
@@ -32,6 +33,7 @@ export default function HomePage() {
         <Journey />
         <Features />
         <FAQs />
+        <LeadForm />
       </main>
       <Footer />
     </div>

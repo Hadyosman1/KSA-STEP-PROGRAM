@@ -16,13 +16,13 @@ const FAQs = () => {
   return (
     <section className="bg-secondary">
       <div className="container space-y-10 py-14">
-        <BlurIn delay={0.3} className="space-y-10">
+        <BlurIn delay={0.1} className="space-y-10">
           <h2 className="text-primary mx-auto text-center text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
             {t("title")}
           </h2>
         </BlurIn>
 
-        <BlurIn delay={0.3}>
+        <BlurIn delay={0.1}>
           <div className="mx-auto max-w-3xl">
             <Accordion className="space-y-2">
               {items.map((item, index) => (

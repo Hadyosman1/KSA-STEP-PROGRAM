@@ -58,8 +58,8 @@ const Statistics = () => {
   return (
     <section>
       <div className="container space-y-10 py-16">
-        <BlurIn delay={0.2}>
-          <h2 className="mx-auto text-primary text-center text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
+        <BlurIn delay={0.1}>
+          <h2 className="text-primary mx-auto text-center text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
             {t("title")}
           </h2>
         </BlurIn>

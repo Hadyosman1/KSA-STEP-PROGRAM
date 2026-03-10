@@ -36,7 +36,7 @@ const Curriculum = () => {
   return (
     <section id="curriculum">
       <div className="container space-y-10 py-16">
-        <BlurIn delay={0.3} className="space-y-10">
+        <BlurIn delay={0.1} className="space-y-7">
           <h2 className="text-primary mx-auto text-center text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
             {t("title")}
           </h2>
@@ -47,7 +47,7 @@ const Curriculum = () => {
 
         <StaggerList
           staggerDelay={0.2}
-          initialDelay={0.2}
+          initialDelay={0.1}
           className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3"
         >
           {items.map((item, idx) => (

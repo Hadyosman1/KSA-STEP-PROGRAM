@@ -25,7 +25,7 @@ const ProblemsAndSolutions = () => {
     <section className="bg-secondary/30">
       <div className="container space-y-6 py-16">
         <div className="space-y-3">
-          <BlurIn delay={0.2}>
+          <BlurIn delay={0.1}>
             <h2 className="text-primary mx-auto mb-3 text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
               {t("Problems.Title")}
             </h2>
@@ -40,7 +40,7 @@ const ProblemsAndSolutions = () => {
 
         <StaggerList
           staggerDelay={0.2}
-          initialDelay={0.2}
+          initialDelay={0.1}
           className="grid grid-cols-1 gap-6 md:grid-cols-2"
         >
           {problems.map((problem: string, index: number) => (
@@ -77,7 +77,7 @@ const ProblemsAndSolutions = () => {
         <hr />
 
         <div className="space-y-3">
-          <BlurIn delay={0.2}>
+          <BlurIn delay={0.1}>
             <h2 className="text-primary mx-auto mb-3 text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
               {t("Solutions.Title")}
             </h2>
@@ -94,7 +94,7 @@ const ProblemsAndSolutions = () => {
 
         <StaggerList
           staggerDelay={0.2}
-          initialDelay={0.2}
+          initialDelay={0.1}
           className="grid grid-cols-1 gap-6 md:grid-cols-2"
         >
           {Solutions.map((solution: string, index: number) => (

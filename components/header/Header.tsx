@@ -1,3 +1,6 @@
+"use client";
+
+import { navigateToLeadForm } from "@/lib/utils";
 import logo from "@/public/logo.png";
 import { Calendar02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -24,7 +27,7 @@ const Header = () => {
             />
           </div>
           <div className="flex items-center gap-1.5">
-            <Button size={"lg"}>
+            <Button size={"lg"} onClick={navigateToLeadForm}>
               {locale === "ar" ? "احجز الآن" : "Book Now"}
               <HugeiconsIcon icon={Calendar02Icon} className="size-4.5" />
             </Button>

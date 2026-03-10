@@ -63,7 +63,7 @@ const Journey = () => {
         />
 
         <div className="container space-y-6 py-16">
-          <BlurIn delay={0.3}>
+          <BlurIn delay={0.1}>
             <div className="space-y-3">
               <h2 className="text-primary mx-auto text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
                 {t("title")}
@@ -78,7 +78,7 @@ const Journey = () => {
 
           <StaggerList
             staggerDelay={0.2}
-            initialDelay={0.2}
+            initialDelay={0.1}
             className="grid gap-4 sm:grid-cols-2 md:grid-cols-4"
           >
             {/* Steps */}
