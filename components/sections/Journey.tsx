@@ -77,7 +77,7 @@ const Journey = () => {
           </BlurIn>
 
           <StaggerList
-            staggerDelay={0.3}
+            staggerDelay={0.2}
             initialDelay={0.2}
             className="grid gap-4 sm:grid-cols-2 md:grid-cols-4"
           >

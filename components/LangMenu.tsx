@@ -36,7 +36,7 @@ const LangMenu = () => {
           <DropdownMenuSeparator />
           <DropdownMenuItem
             render={
-              <Link href="/" locale="en">
+              <Link href="/" locale="en" scroll={false}>
                 {locale === "en" && <HugeiconsIcon icon={Tick02Icon} />}
                 English
               </Link>
@@ -44,7 +44,7 @@ const LangMenu = () => {
           />
           <DropdownMenuItem
             render={
-              <Link href="/" locale="ar">
+              <Link href="/" locale="ar" scroll={false}>
                 {locale === "ar" && <HugeiconsIcon icon={Tick02Icon} />}
                 عربي
               </Link>

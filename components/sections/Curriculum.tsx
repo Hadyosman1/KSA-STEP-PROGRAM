@@ -46,7 +46,7 @@ const Curriculum = () => {
         </BlurIn>
 
         <StaggerList
-          staggerDelay={0.3}
+          staggerDelay={0.2}
           initialDelay={0.2}
           className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3"
         >

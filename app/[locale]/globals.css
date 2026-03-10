@@ -189,7 +189,7 @@
 
 @layer base {
   :root {
-    --header-height: 90px;
+    --header-height: 80px;
   }
 
   * {

@@ -42,7 +42,7 @@ const Features = () => {
             </BlurIn>
 
             <StaggerList
-              staggerDelay={0.3}
+              staggerDelay={0.2}
               initialDelay={0.2}
               className="grid grid-cols-1 gap-4 md:grid-cols-2"
             >

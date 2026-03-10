@@ -137,5 +137,26 @@
         "subtitle": "If you complete the program and don't see improvement, you can retake the course for free."
       }
     ]
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Does the program guarantee a specific score?",
+        "a": "The program is based on a proven methodology that has helped many students improve their scores. However, results also depend on the student's commitment to practice and study."
+      },
+      {
+        "q": "Is the course online or in person?",
+        "a": "The course is fully online with live sessions and an educational platform available at any time."
+      },
+      {
+        "q": "Is the program suitable for students who have already taken the test?",
+        "a": "Yes, the program is suitable for both first-time test takers and students who want to improve their previous score."
+      },
+      {
+        "q": "Can I access the content after the sessions end?",
+        "a": "Yes, all lessons are available on the platform and you can review them anytime."
+      }
+    ]
   }
 }

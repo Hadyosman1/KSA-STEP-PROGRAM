@@ -22,11 +22,11 @@ const ProblemsAndSolutions = () => {
   const Solutions = t.raw("Solutions.items");
 
   return (
-    <section>
+    <section className="bg-secondary/30">
       <div className="container space-y-6 py-16">
         <div className="space-y-3">
           <BlurIn delay={0.2}>
-            <h2 className="mx-auto text-primary mb-3 text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
+            <h2 className="text-primary mx-auto mb-3 text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
               {t("Problems.Title")}
             </h2>
 
@@ -39,7 +39,7 @@ const ProblemsAndSolutions = () => {
         </div>
 
         <StaggerList
-          staggerDelay={0.3}
+          staggerDelay={0.2}
           initialDelay={0.2}
           className="grid grid-cols-1 gap-6 md:grid-cols-2"
         >
@@ -78,11 +78,11 @@ const ProblemsAndSolutions = () => {
 
         <div className="space-y-3">
           <BlurIn delay={0.2}>
-            <h2 className="mx-auto mb-3 text-2xl leading-9 font-bold text-primary md:text-3xl lg:text-4xl">
+            <h2 className="text-primary mx-auto mb-3 text-2xl leading-9 font-bold md:text-3xl lg:text-4xl">
               {t("Solutions.Title")}
             </h2>
 
-            <p className="text-lg leading-8 text-muted-foreground">
+            <p className="text-muted-foreground text-lg leading-8">
               {t("Solutions.subTitle")}
             </p>
 
@@ -93,7 +93,7 @@ const ProblemsAndSolutions = () => {
         </div>
 
         <StaggerList
-          staggerDelay={0.3}
+          staggerDelay={0.2}
           initialDelay={0.2}
           className="grid grid-cols-1 gap-6 md:grid-cols-2"
         >

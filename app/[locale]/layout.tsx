@@ -55,7 +55,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={locale === "ar" ? "rtl" : "ltr"}
-      className="scroll-smooth"
+      className="scroll-smooth scroll-pt-(--header-height)"
     >
       <body className={`${cairo.className} antialiased`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
