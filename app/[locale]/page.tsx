@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/Footer";
 import Header from "@/components/header/Header";
 import Curriculum from "@/components/sections/Curriculum";
 import FAQs from "@/components/sections/FAQs";
@@ -32,6 +33,7 @@ export default function HomePage() {
         <Features />
         <FAQs />
       </main>
+      <Footer />
     </div>
   );
 }

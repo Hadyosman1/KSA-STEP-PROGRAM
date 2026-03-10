@@ -158,5 +158,9 @@
         "a": "Yes, all lessons are available on the platform and you can review them anytime."
       }
     ]
+  },
+  "Footer": {
+    "description": "Elm Way is a Saudi virtual academy dedicated to helping students and professionals achieve their career goals through specialized training programs and high-quality educational content. The academy provides flexible and accessible learning solutions designed to prepare learners for professional exams and equip them with the knowledge, skills, and confidence needed for career success using modern e-learning technologies.",
+    "copyright": "All rights reserved to Elm Way company"
   }
 }

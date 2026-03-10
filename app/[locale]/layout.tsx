@@ -9,6 +9,7 @@ import "./globals.css";
 // i18n
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
+import { Toaster } from "@/components/ui/sonner";
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -55,12 +56,13 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={locale === "ar" ? "rtl" : "ltr"}
-      className="scroll-smooth scroll-pt-(--header-height)"
+      className="scroll-pt-(--header-height) scroll-smooth"
     >
       <body className={`${cairo.className} antialiased`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <DirectionProvider direction={locale === "ar" ? "rtl" : "ltr"}>
             {children}
+            <Toaster duration={4000} richColors position="top-center" />
           </DirectionProvider>
         </NextIntlClientProvider>
       </body>
