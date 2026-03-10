@@ -74,7 +74,7 @@ const Statistics = () => {
               viewport={{ once: true }}
             >
               <Card className="relative rounded-md shadow-2xl transition-transform duration-200 hover:translate-y-1">
-                <div className="bg-primary absolute inset-s-0 top-0 h-full w-1.5" />
+                <div className="bg-primary absolute inset-s-0 top-0 h-full w-1" />
                 <CardContent className="flex items-center gap-1">
                   <CardTitle className="text-primary mb-2 font-bold md:text-lg">
                     <AnimatedCounter

@@ -12,7 +12,7 @@ const Journey = () => {
 
   return (
     <section>
-      <div className="relative min-h-[50vh] w-full">
+      <div className="relative w-full">
         {/* Dashed Bottom Fade Grid */}
         <div
           className="absolute inset-0 z-[-1]"

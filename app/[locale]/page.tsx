@@ -2,6 +2,7 @@
 
 import Header from "@/components/header/Header";
 import Curriculum from "@/components/sections/Curriculum";
+import Features from "@/components/sections/Features";
 import Hero from "@/components/sections/Hero";
 import Journey from "@/components/sections/Journey";
 import ProblemsAndSolutions from "@/components/sections/ProblemsAndSolutions";
@@ -30,6 +31,7 @@ export default function HomePage() {
         <Curriculum />
         <hr className="container" />
         <Journey />
+        <Features />
       </main>
     </div>
   );

@@ -108,5 +108,34 @@
       "Weekly progress monitoring and adjustments",
       "Continuous support until the test day"
     ]
+  },
+  "Features": {
+    "title": "Why Students Choose Elm Way Program?",
+    "items": [
+      {
+        "title": "Live Interactive Training",
+        "subtitle": "Expert instructors answer your questions in real time during the session."
+      },
+      {
+        "title": "Full Session Recordings",
+        "subtitle": "Access all recorded lessons anytime and review them whenever you need."
+      },
+      {
+        "title": "Personalized Guidance",
+        "subtitle": "We help you identify your weak points and work on improving them."
+      },
+      {
+        "title": "Supportive Student Community",
+        "subtitle": "A private group connecting students with instructors for continuous support."
+      },
+      {
+        "title": "Flexible Payment Options",
+        "subtitle": "Pay easily through Tamara or Tabby."
+      },
+      {
+        "title": "Free Retake Guarantee",
+        "subtitle": "If you complete the program and don't see improvement, you can retake the course for free."
+      }
+    ]
   }
 }
