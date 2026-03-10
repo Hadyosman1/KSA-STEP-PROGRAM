@@ -1,0 +1,23 @@
+# منع عرض قائمة الملفات
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+
+# 1. إذا طلب المستخدم /en مباشرة أو عمل Reload وهو فيها
+# يتم توجيهه لملف en.html والحفاظ على المسار
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^en$ en.html [L]
+RewriteRule ^en/(.*)$ en.html [L]
+
+# 2. إذا طلب المستخدم /ar مباشرة أو عمل Reload وهو فيها
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ar$ ar.html [L]
+RewriteRule ^ar/(.*)$ ar.html [L]
+
+# 3. توجيه الصفحة الرئيسية (الدومين فقط) لـ ar.html كافتراضي
+RewriteRule ^$ ar.html [L]
+
+# 4. السماح لملفات Next.js والـ CSS بالتحميل
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
