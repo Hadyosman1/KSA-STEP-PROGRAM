@@ -10,6 +10,7 @@ import Journey from "@/components/sections/Journey";
 import LeadForm from "@/components/sections/LeadForm";
 import ProblemsAndSolutions from "@/components/sections/ProblemsAndSolutions";
 import Statistics from "@/components/sections/Statistics";
+import SuccessStory from "@/components/sections/SuccessStory";
 import { useTranslations } from "next-intl";
 
 export default function HomePage() {
@@ -32,6 +33,7 @@ export default function HomePage() {
         <Curriculum />
         <Journey />
         <Features />
+        <SuccessStory />
         <FAQs />
         <LeadForm />
       </main>
