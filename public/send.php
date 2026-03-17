@@ -73,7 +73,7 @@ if (file_exists($file)) {
 file_put_contents($file, time());
 
 // إعداد الإيميل
-$to = "hady.osman.dev@gmail.com";
+$to = "ali@alhaiti.com";
 
 $subject = "New Lead - " . $source;
 
