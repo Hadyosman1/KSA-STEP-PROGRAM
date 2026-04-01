@@ -12,52 +12,68 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 
+// Men avatars
 import avatar1 from "@/public/avatars/man-2.png";
 import avatar2 from "@/public/avatars/man-3.png";
-import avatar3 from "@/public/avatars/man-4.png";
-import avatar4 from "@/public/avatars/man-5.png";
-import avatar5 from "@/public/avatars/man-6.png";
+// import avatar3 from "@/public/avatars/man-4.png";
+// import avatar4 from "@/public/avatars/man-5.png";
+// import avatar5 from "@/public/avatars/man-6.png";
+// import avatar6 from "@/public/avatars/man-7.png";
+
+// Women avatars
+import womAvatar2 from "@/public/avatars/women-avatars/avatar-2.png";
+import womAvatar3 from "@/public/avatars/women-avatars/avatar-3.png";
+import womAvatar4 from "@/public/avatars/women-avatars/avatar-4.png";
+import womAvatar1 from "@/public/avatars/women-avatars/avatar.png";
 
 const testimonials = [
   {
-    name: { ar: "فهد العنزي", en: "Fahad Al-Anzi" },
+    name: { ar: "عبدالمجيد الابراهيم", en: "Abdulmajeed Al-Ibrahim" },
     testimonial: {
-      ar: "الحمد لله، بعد البرنامج قدرت أحسن درجتي في القدرات بشكل كبير وما توقعت النتيجة تكون كذا.",
-      en: "Thanks to the program, I managed to significantly improve my Qudrat score. I didn't expect it to be this good.",
+      ar: "دروس خصوصية عن طريق تطبيق زوم باسعار ممتازة .. وقدرت اختار الوقت اللي يناسبني يعطيكم العافية",
+      en: "Private lessons via Zoom at great prices. I was able to choose the time that suits me. Much appreciated!",
     },
     avatar: avatar1,
   },
   {
+    name: { ar: "هدى النويصر", en: "Huda Al-Nuwair" },
+    testimonial: {
+      ar: "الاكاديمية ممتازه اولادي في متوسط الشرح رهيب المعلمة عندها طولة بال تعيد وتزيد وماتمشي عن الصفحة الا وهم فاهمين كلمة شكر ماتوفي حقهم",
+      en: "The academy is excellent. My kids are in middle school and the explanation is amazing. The teacher is very patient, repeats as needed, and makes sure they fully understand before moving on. Words can’t thank them enough.",
+    },
+    avatar: womAvatar1,
+  },
+  {
+    name: { ar: "ام وسام مغربي", en: "Umm Wisam Maghrabi" },
+    testimonial: {
+      ar: "مررره جميل شرح وتوصيل المعلومة ولا اروع الله يسعد كل من اجتهد في هذه المنصة",
+      en: "The explanation and delivery are absolutely رائع. May God bless everyone who worked hard on this platform.",
+    },
+    avatar: womAvatar2,
+  },
+  {
+    name: { ar: "مني الحربي", en: "Mona Al-Harbi" },
+    testimonial: {
+      ar: "ممتاز جدا الشرح واستفدت كثير متعاونين ومجهودهم واضح يعطيهم العافية",
+      en: "The explanation is excellent. I benefited a lot. They’re very cooperative and their effort is clearly noticeable. Much appreciated.",
+    },
+    avatar: womAvatar3,
+  },
+  {
     name: { ar: "محمد الغامدي", en: "Mohammed Al-Ghamdi" },
     testimonial: {
-      ar: "المدربين جداً محترفين وشرحهم واضح، حسّيت بالفرق من أول أسبوع.",
-      en: "The instructors are very professional and their explanations are clear. I felt the difference from the first week.",
+      ar: "صراحة كانت دورة ممتازة جدا جدا واستفدت منها كثير وتعلمت منها الطريقة الصحيحة للحل ما ندمت يوم دخلت الدورة ❤️❤️",
+      en: "Honestly, it was an excellent course. I benefited a lot and learned the correct way to solve problems. I don’t regret joining it at all ❤️❤️",
     },
     avatar: avatar2,
   },
   {
-    name: { ar: "سعيد الحربي", en: "Saeed Al-Harbi" },
+    name: { ar: "الطالبة لمياء", en: "Student Lamia" },
     testimonial: {
-      ar: "البرنامج مرتب خطوة بخطوة، صار عندي خطة واضحة وأقدر أذاكر بدون تشتت.",
-      en: "The program is well-organized step by step. I now have a clear plan and can study without getting distracted.",
+      ar: "اوجه شكر لمنصة طريق العلم علي تعاونهم معي ومرونة عمل الجدول جدا متعاونين وخدومين جدا انصح فيهم 🧡",
+      en: "I would like to thank Elm Way for their support and flexible scheduling. They are very helpful and cooperative. Highly recommended 🧡",
     },
-    avatar: avatar3,
-  },
-  {
-    name: { ar: "عبدالله الشمري", en: "Abdullah Al-Shammari" },
-    testimonial: {
-      ar: "الاختبارات المحاكاة حسستني بثقة يوم الاختبار الحقيقي، جداً أنصح فيه.",
-      en: "The mock tests gave me confidence on the real exam day. I highly recommend it.",
-    },
-    avatar: avatar4,
-  },
-  {
-    name: { ar: "نواف السبيعي", en: "Nawaf Al-Subaie" },
-    testimonial: {
-      ar: "متابعتي مع المستشار التعليمي كانت ممتازة، ساعدني أركز على نقاط ضعفي وزادت درجتي.",
-      en: "My guidance with the educational advisor was excellent. He helped me focus on my weak points and boosted my score.",
-    },
-    avatar: avatar5,
+    avatar: womAvatar4,
   },
 ];
 
