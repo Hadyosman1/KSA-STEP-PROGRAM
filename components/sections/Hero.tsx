@@ -16,7 +16,7 @@ interface Props {
   badge: string;
   title: string;
   subtitle: string;
-  features: string[];
+  features?: string[];
   ctaText: string;
   secondaryCtaText: string;
 }
@@ -36,7 +36,7 @@ const Hero = ({
   };
 
   return (
-    <section className="relative grid min-h-[78vh] py-24">
+    <section className="relative grid min-h-[70vh] py-24">
       <Image
         src={heroPic}
         alt="Cover"
@@ -46,7 +46,7 @@ const Hero = ({
         sizes="100vw"
         className="z-[-2] object-cover"
       />
-      <div className="to-brand-dark-blue via-brand-light-blue from-brand-green/60 absolute inset-0 z-[-1] bg-linear-to-b opacity-30" />
+      <div className="to-brand-dark-blue via-brand-light-blue from-brand-green/60 absolute inset-0 z-[-1] bg-linear-to-b opacity-40" />
       <div className="container grid items-center">
         <div>
           <div className="text-background mx-auto max-w-4xl text-center text-balance">
@@ -56,7 +56,7 @@ const Hero = ({
               </Badge>
             </FadeUp>
             <FadeUp delay={0.3}>
-              <h1 className="mb-6 text-3xl leading-12 font-bold md:text-4xl lg:text-5xl">
+              <h1 className="mb-6 text-3xl leading-12 font-bold md:text-4xl lg:text-5xl lg:leading-16">
                 {title}
               </h1>
             </FadeUp>
@@ -93,25 +93,27 @@ const Hero = ({
             </div>
           </FadeUp>
 
-          <FadeUp delay={1.2}>
-            <div className="mx-auto mt-8 w-fit">
-              <ul className="mx-auto flex flex-wrap items-center justify-center gap-2">
-                {features.map((feature, index) => (
-                  <li
-                    key={index}
-                    className="text-brand-white flex items-center gap-0.25 text-xs md:text-sm lg:text-base"
-                  >
-                    <HugeiconsIcon
-                      icon={Tick02Icon}
-                      size="24"
-                      className="text-green-500"
-                    />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </FadeUp>
+          {features && features.length > 0 && (
+            <FadeUp delay={1.2}>
+              <div className="mx-auto mt-8 w-fit">
+                <ul className="mx-auto flex flex-wrap items-center justify-center gap-2">
+                  {features.map((feature, index) => (
+                    <li
+                      key={index}
+                      className="text-brand-white flex items-center gap-0.25 text-xs md:text-sm lg:text-base"
+                    >
+                      <HugeiconsIcon
+                        icon={Tick02Icon}
+                        size="24"
+                        className="text-green-500"
+                      />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeUp>
+          )}
         </div>
       </div>
     </section>

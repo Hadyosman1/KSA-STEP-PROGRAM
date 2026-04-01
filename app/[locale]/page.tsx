@@ -24,7 +24,6 @@ export default function HomePage() {
           badge={t("Hero.badge")}
           title={t("Hero.title")}
           subtitle={t("Hero.description")}
-          features={t.raw("Hero.features")}
           ctaText={t("Hero.buttons.CTA")}
           secondaryCtaText={t("Hero.buttons.secondary")}
         />

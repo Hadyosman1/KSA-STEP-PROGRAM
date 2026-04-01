@@ -40,7 +40,7 @@ const AnimatedCounter = ({
   return (
     <span
       ref={ref}
-      className="bg-brand-gray/5 grid aspect-square w-20 place-items-center rounded-full p-2"
+      className="bg-brand-gray/5 grid aspect-square w-20 place-items-center rounded-full p-2 text-center"
     >
       {Math.round(displayValue)}
       {suffix}
