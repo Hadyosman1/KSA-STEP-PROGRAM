@@ -51,7 +51,7 @@ const Hero = ({
         <div>
           <div className="text-background mx-auto max-w-4xl text-center text-balance">
             <FadeUp delay={0.1}>
-              <Badge className="bg-brand-green/20 outline-brand-green mx-auto mb-4 flex h-auto px-2 py-0.5 text-sm leading-9 outline-2 md:text-base">
+              <Badge className="bg-brand-green/20 outline-brand-green mx-auto mb-4 flex h-auto max-w-full px-2 py-0.5 text-xs leading-9 outline-2 md:text-base">
                 {badge}
               </Badge>
             </FadeUp>

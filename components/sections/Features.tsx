@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import {
   ComputerVideoIcon,
   CreditCardValidationIcon,
-  LaptopVideoIcon,
+  TaskEdit02Icon,
   UserCheck01Icon,
   UserGroupIcon,
   UserShield01Icon,
@@ -18,10 +18,10 @@ import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 import featuresPic from "@/public/features.webp";
 
 const iconsMap = [
-  LaptopVideoIcon,
+  UserGroupIcon,
   ComputerVideoIcon,
   UserCheck01Icon,
-  UserGroupIcon,
+  TaskEdit02Icon,
   CreditCardValidationIcon,
   UserShield01Icon,
 ];

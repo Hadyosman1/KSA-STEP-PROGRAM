@@ -110,28 +110,28 @@
     "title": "Why Students Choose Elm Way Program?",
     "items": [
       {
-        "title": "Live Interactive Training",
-        "subtitle": "Expert instructors answer your questions in real time during the session."
+        "title": "STEP-Specialized Instructors",
+        "subtitle": "Each instructor has over 5 years of experience training students for STEP and similar proficiency exams."
       },
       {
         "title": "Full Session Recordings",
-        "subtitle": "Access all recorded lessons anytime and review them whenever you need."
+        "subtitle": "Missed a session or want to review? Everything is recorded and available on the platform 24/7."
       },
       {
-        "title": "Personalized Guidance",
-        "subtitle": "We help you identify your weak points and work on improving them."
+        "title": "Personalized Follow-Up",
+        "subtitle": "We continuously track your progress and focus specifically on your weak areas—you’re never left on your own."
       },
       {
-        "title": "Supportive Student Community",
-        "subtitle": "A private group connecting students with instructors for continuous support."
+        "title": "Real Exam Simulation",
+        "subtitle": "Practice tests that match the real exam in format, content, and timing—so there are no surprises on test day."
       },
       {
         "title": "Flexible Payment Options",
-        "subtitle": "Pay easily through Tamara or Tabby."
+        "subtitle": "Easy and convenient payment through Tamara or Tabby."
       },
       {
         "title": "Free Retake Guarantee",
-        "subtitle": "If you complete the program and don't see improvement, you can retake the course for free."
+        "subtitle": "If you complete the program and don’t achieve the desired improvement, you can retake the course for free."
       }
     ]
   },
@@ -169,7 +169,7 @@
     "subtitle": "Many of our students have improved their aptitude test scores by over 80% after joining the program."
   },
   "LeadForm": {
-    "title": "Register Now and Start Improving Your Score",
+    "title": "Register Now and Start Your Journey to a Higher STEP Score",
     "subtitle": "Fill in your details and our team will contact you within 24 hours to build your study plan.",
     "form": {
       "footer": "🔒 Your information is secure and will not be shared with any third party.",
@@ -177,7 +177,7 @@
         "fullName": "Full Name",
         "email": "Email Address",
         "phone": "Phone Number",
-        "submit": "Reserve Your Spot Now"
+        "submit": "Reserve Your Spot and We’ll Get in Touch"
       }
     }
   },
