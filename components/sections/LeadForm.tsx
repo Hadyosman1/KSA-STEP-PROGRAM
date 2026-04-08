@@ -2,8 +2,6 @@
 
 import { ERROR_CODES, sendLead } from "@/services/sendLead";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { LoaderPinwheelIcon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 import { Locale, useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
@@ -186,12 +184,6 @@ const LeadForm = () => {
                     className={"w-fit"}
                     size={"lg"}
                   >
-                    {form.formState.isSubmitting && (
-                      <HugeiconsIcon
-                        icon={LoaderPinwheelIcon}
-                        className="size-5 animate-spin"
-                      />
-                    )}
                     {t("form.fields.submit")}
                   </Button>
                 </FieldGroup>
