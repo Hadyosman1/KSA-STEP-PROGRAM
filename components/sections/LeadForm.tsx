@@ -197,7 +197,6 @@ const LeadForm = () => {
       <SuccessDialog
         open={showSuccessDialog}
         onOpenChange={setShowSuccessDialog}
-        locale={locale}
       />
     </section>
   );

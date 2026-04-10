@@ -11,19 +11,16 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Tick02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Locale } from "next-intl";
+import { useTranslations } from "next-intl";
 
 interface SuccessDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  locale: Locale;
 }
 
-export const SuccessDialog = ({
-  open,
-  onOpenChange,
-  locale,
-}: SuccessDialogProps) => {
+export const SuccessDialog = ({ open, onOpenChange }: SuccessDialogProps) => {
+  const t = useTranslations("SuccessPage");
+
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
       <AlertDialogContent className={""}>
@@ -36,12 +33,10 @@ export const SuccessDialog = ({
           </div>
 
           <AlertDialogTitle className={"w-full text-center text-green-600"}>
-            {locale === "ar" ? "تم الإرسال بنجاح!" : "Success!"}
+            {t("title")}
           </AlertDialogTitle>
           <AlertDialogDescription className={"w-full text-center"}>
-            {locale === "ar"
-              ? "شكراً لتواصلك معنا. سنقوم بمراجعة طلبك والتواصل معك قريباً."
-              : "Thank you for contacting us. We will review your submission and get back to you soon."}
+            {t("description")}
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
@@ -50,7 +45,7 @@ export const SuccessDialog = ({
             size="lg"
             onClick={() => onOpenChange(false)}
           >
-            {locale === "ar" ? "حسناً" : "Got it"}
+            {t("button")}
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

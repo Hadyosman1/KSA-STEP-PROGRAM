@@ -4,6 +4,7 @@ import { DirectionProvider } from "@base-ui/react";
 import { Messages, NextIntlClientProvider } from "next-intl";
 import { Cairo } from "next/font/google";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 
 // CSS
 import "./globals.css";
@@ -59,7 +60,31 @@ export default async function LocaleLayout({
       dir={locale === "ar" ? "rtl" : "ltr"}
       className="scroll-pt-(--header-height) scroll-smooth"
     >
+      <head>
+        {/* 1. GTM Script */}
+        <Script
+          id="gtm-script"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-TQPSN2TH');`,
+          }}
+        />
+      </head>
       <body className={`${cairo.className} antialiased`}>
+        {/* 2. GTM noscript */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TQPSN2TH"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
         <NextIntlClientProvider messages={messages} locale={locale}>
           <DirectionProvider direction={locale === "ar" ? "rtl" : "ltr"}>
             {children}
